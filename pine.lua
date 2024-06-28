@@ -1,6 +1,9 @@
 local Pine = {}
 
 function Pine:CreateWindow(windowname, title)
+	windowname = windowname or "Pine_Window"
+	title = title or "Pine"
+	
 	local Pine = Instance.new("ScreenGui")
 	local Main = Instance.new("Frame")
 	local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
